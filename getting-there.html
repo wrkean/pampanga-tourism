@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting There — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html" class="active">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Plan Your Trip</span>
+        </div>
+        <h1>Getting There & Getting Around</h1>
+        <p>Everything you need to travel comfortably in Pampanga.</p>
+      </div>
+    </header>
+    <section class="section">
+      <div class="section-inner">
+        <div class="two-col">
+          <div>
+            <h2 class="section-title">Access Points</h2>
+            <div class="section-divider"></div>
+            <div class="highlight-list">
+              <div class="highlight-item">
+                <div class="highlight-icon">✈️</div>
+                <div class="highlight-text">
+                  <strong>Clark International Airport</strong
+                  ><span
+                    >Main gateway for domestic and international
+                    travelers.</span
+                  >
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🚌</div>
+                <div class="highlight-text">
+                  <strong>Provincial Bus Routes</strong
+                  ><span
+                    >Frequent trips from Metro Manila to major Pampanga
+                    cities.</span
+                  >
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🚗</div>
+                <div class="highlight-text">
+                  <strong>Expressway Access</strong
+                  ><span
+                    >NLEX and SCTEX make road travel faster and
+                    straightforward.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="itinerary.html" class="btn btn-red"
+              >Use Suggested Itinerary</a
+            >
+          </div>
+          <div>
+            <img
+              src="images/getting-there-main.jpg"
+              alt="Transit overview for Pampanga"
+              class="ratio-4-3"
+              style="border-radius: 8px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="section-inner">
+        <h2 class="section-title">Local Transport Options</h2>
+        <div class="section-divider"></div>
+        <div class="card-grid card-grid-4">
+          <article class="card">
+            <div class="card-body">
+              <h3>Jeepneys</h3>
+              <p>Economical for short city routes and inter-town travel.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Tricycles</h3>
+              <p>Best for short neighborhood rides and market trips.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Ride-Hailing</h3>
+              <p>Convenient in urban areas like Clark and Angeles.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Car Rental</h3>
+              <p>Recommended for multi-stop itineraries and family groups.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-inner two-col reverse">
+        <div>
+          <h2 class="section-title">Plan the Rest of Your Stay</h2>
+          <div class="section-divider"></div>
+          <p style="color: var(--gray); margin-bottom: 1rem">
+            Pair this transport guide with lodging and shopping pages to
+            complete your travel plan.
+          </p>
+          <div class="hero-actions">
+            <a href="accommodation.html" class="btn btn-gold">Where to Stay</a
+            ><a href="shopping.html" class="btn btn-red">Shopping Guide</a>
+          </div>
+        </div>
+        <div>
+          <div class="tips-box">
+            <h4>Travel Notes</h4>
+            <ul>
+              <li>Weekday travel avoids heavier weekend traffic.</li>
+              <li>Book airport transfers in advance during holidays.</li>
+              <li>Keep cash on hand for local transport and markets.</li>
+              <li>Bring sun protection for daytime city tours.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html" class="active">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Destinations</span>
+        </div>
+        <h1>Top Destinations</h1>
+        <p>
+          City landmarks, mountain scenery, and eco-tourism spots across
+          Pampanga.
+        </p>
+      </div>
+    </header>
+    <section class="section">
+      <div class="section-inner">
+        <div class="card-grid card-grid-4">
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/destinations-card-1.jpeg"
+                alt="San Fernando destination"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>San Fernando</h3>
+              <p>
+                The provincial capital and home of the Giant Lantern Festival.
+              </p>
+              <a href="san-fernando.html" class="card-link">Open Guide →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/destinations-card-2.jpg"
+                alt="Mount Arayat destination"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Mount Arayat</h3>
+              <p>
+                A majestic dormant volcano with trails, forest parks, and views.
+              </p>
+              <a href="mount-arayat.html" class="card-link">Open Guide →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/destinations-card-3.avif"
+                alt="Clark Freeport destination"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Clark Freeport</h3>
+              <p>Modern district with parks, dining, museums, and events.</p>
+              <a href="clark.html" class="card-link">Open Guide →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/destinations-card-4.webp"
+                alt="Angeles City destination"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Angeles City</h3>
+              <p>
+                Historic neighborhoods and one of the region's top dining
+                scenes.
+              </p>
+              <a href="angeles.html" class="card-link">Open Guide →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/destinations-card-5.webp"
+                alt="Candaba Wetlands destination"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Candaba Wetlands</h3>
+              <p>A haven for migratory birds and wetland photography.</p>
+              <a href="candaba-wetlands.html" class="card-link">Open Guide →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/destinations-card-6.jpg"
+                alt="Church heritage trail destination"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Church Heritage Trail</h3>
+              <p>
+                Visit centuries-old churches and learn about Kapampangan
+                history.
+              </p>
+              <a href="churches.html" class="card-link">Open Guide →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="section-inner two-col">
+        <div>
+          <h2 class="section-title">Suggested First-Time Route</h2>
+          <div class="section-divider"></div>
+          <p style="color: var(--gray); margin-bottom: 1rem">
+            Start with San Fernando and Angeles, continue to Clark, then set one
+            day for either Mount Arayat or Candaba Wetlands based on your travel
+            style.
+          </p>
+          <a href="itinerary.html" class="btn btn-red">View 3-Day Itinerary</a>
+        </div>
+        <div>
+          <img
+            src="images/destinations-route.jpg"
+            alt="Suggested Pampanga route"
+            class="ratio-4-3"
+            style="border-radius: 8px"
+          />
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

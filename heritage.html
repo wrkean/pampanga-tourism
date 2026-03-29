@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritage & Culture — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html" class="active">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header">
+      <img
+        src="images/heritage-header.png"
+        alt="Heritage"
+        class="page-header-bg"
+      />
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Heritage</span>
+        </div>
+        <h1>Heritage & Culture</h1>
+        <p>Pampanga's rich history, language, and cultural identity</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner">
+        <p
+          style="
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          "
+        >
+          Kapampangan Identity
+        </p>
+        <h2 class="section-title">A Province Deep in History</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">
+          Pampanga has been at the crossroads of Philippine history — from the
+          pre-colonial era to the Spanish colonial period, American occupation,
+          and the modern republic. Its people, the Kapampangans, are proud
+          custodians of a distinct language and culture.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/heritage-card-1.jpg"
+                alt="Museo ning Kapampangan"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Museo ning Kapampangan</h3>
+              <p>
+                A museum in San Fernando that houses artifacts, documents, and
+                exhibits tracing the heritage of the Kapampangan people.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/heritage-card-2.jpg"
+                alt="Ancestral homes in Pampanga"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Ancestral Houses</h3>
+              <p>
+                Centuries-old bahay na bato (stone houses) in Bacolor and other
+                towns showcase the domestic architecture of colonial-era
+                Pampanga.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/heritage-card-3.png"
+                alt="Kapampangan language heritage"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Kapampangan Language</h3>
+              <p>
+                Kapampangan (Pampango) is one of the major languages of the
+                Philippines, with a rich literary tradition and its own unique
+                script.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/heritage-card-4.webp"
+                alt="Bacolor Church heritage site"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Bacolor — The Sunken Town</h3>
+              <p>
+                The town of Bacolor was partially buried under lahar from the
+                1991 Mount Pinatubo eruption, creating a haunting heritage
+                landscape unlike any other.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/heritage-card-5.jpg"
+                alt="Churches heritage trail"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Church Heritage Trail</h3>
+              <p>
+                Follow a trail of colonial-era churches across Pampanga's
+                municipalities — each with its own story of faith and
+                architecture.
+              </p>
+              <a href="churches.html" class="card-link">Explore →</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/heritage-card-6.jpg"
+                alt="Kapampangan arts and crafts"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Arts & Crafts Tradition</h3>
+              <p>
+                From bamboo crafts and lantern-making to woodcarving and
+                silversmithing — Kapampangan artisanship is a living heritage.
+              </p>
+              <a href="arts-crafts.html" class="card-link">Explore →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="section-inner" style="text-align: center">
+        <h2 class="section-title">The Kapampangan Spirit</h2>
+        <div class="section-divider" style="margin: 0.75rem auto 1.5rem"></div>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+          "
+        >
+          Kapampangans are known throughout the Philippines for their passion,
+          creativity, and fierce pride in their identity. Whether it is through
+          their cuisine, their festivals, their arts, or their language — the
+          Kapampangan spirit is unmistakable.
+        </p>
+        <a href="about.html" class="btn btn-gold">Learn About Pampanga</a>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

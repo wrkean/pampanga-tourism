@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Pampanga — Official Tourism Guide</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <img
+        src="images/home-hero.jpg"
+        alt="Scenic view representing Pampanga tourism"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to <em>Pampanga</em></h1>
+        <p>
+          Explore the Culinary Capital of the Philippines through heritage
+          towns, mountain landscapes, wetlands, festivals, and unforgettable
+          Kapampangan hospitality.
+        </p>
+        <div class="hero-actions">
+          <a href="destinations.html" class="btn btn-gold"
+            >Explore Destinations</a
+          >
+          <a href="itinerary.html" class="btn btn-outline">3-Day Itinerary</a>
+        </div>
+      </div>
+    </header>
+    <section class="info-strip"></section>
+    <section class="section">
+      <div class="section-inner">
+        <h2 class="section-title">Start Your Journey</h2>
+        <p class="section-subtitle">
+          Pick your travel style and discover the places and experiences that
+          make Pampanga special.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/home-card-1.jpg"
+                alt="Top destinations in Pampanga"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Top Destinations</h3>
+              <p>
+                Visit heritage churches, modern lifestyle districts, and nature
+                attractions across the province.
+              </p>
+              <a href="destinations.html" class="card-link"
+                >View Destinations →</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/home-card-2.webp"
+                alt="Festivals and culture in Pampanga"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Festivals & Culture</h3>
+              <p>
+                Experience colorful local traditions from giant lanterns to
+                community street celebrations.
+              </p>
+              <a href="festivals.html" class="card-link">Explore Festivals →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/home-card-3.jpg"
+                alt="Kapampangan cuisine and food trail"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Culinary Adventures</h3>
+              <p>
+                Discover why Pampanga is known for its craftsmanship in flavor
+                and food traditions.
+              </p>
+              <a href="kapampangan-cuisine.html" class="card-link"
+                >Taste Pampanga →</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="section-inner two-col">
+        <div>
+          <h2 class="section-title">Plan with Confidence</h2>
+          <div class="section-divider"></div>
+          <p style="color: var(--gray); margin-bottom: 1rem">
+            Build your trip using practical guides on transport, best travel
+            periods, where to stay, and what to shop.
+          </p>
+          <div class="highlight-list">
+            <div class="highlight-item">
+              <div class="highlight-icon">🗺️</div>
+              <div class="highlight-text">
+                <strong>Trip Essentials</strong
+                ><span>How to get around Pampanga efficiently</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🏨</div>
+              <div class="highlight-text">
+                <strong>Stay Options</strong
+                ><span>Hotels and lodgings for every budget</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🛍️</div>
+              <div class="highlight-text">
+                <strong>Local Finds</strong
+                ><span>Markets, crafts, and souvenir spots</span>
+              </div>
+            </div>
+          </div>
+          <a href="getting-there.html" class="btn btn-red">Open Travel Guide</a>
+        </div>
+        <div>
+          <img
+            src="images/home-planner.jpg"
+            alt="Pampanga travel planner"
+            class="ratio-4-3"
+            style="border-radius: 8px"
+          />
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

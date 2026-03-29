@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html" class="active">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Shopping</span>
+        </div>
+        <h1>Shopping in Pampanga</h1>
+        <p>From handmade crafts to signature Kapampangan delicacies.</p>
+      </div>
+    </header>
+    <section class="section">
+      <div class="section-inner">
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/shopping-card-1.webp"
+                alt="Modern malls in Pampanga"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Shopping Centers</h3>
+              <p>
+                Air-conditioned complexes for fashion, tech, and family dining.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/shopping-card-2.webp"
+                alt="Public markets in Pampanga"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Local Markets</h3>
+              <p>
+                Great for produce, local snacks, and authentic neighborhood
+                finds.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="images/shopping-card-3.jpg"
+                alt="Pasalubong stores in Pampanga"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Souvenir Spots</h3>
+              <p>
+                Pick up lantern miniatures, delicacies, and handcrafted
+                keepsakes.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="section-inner two-col">
+        <div>
+          <h2 class="section-title">Best Buys</h2>
+          <div class="section-divider"></div>
+          <div class="highlight-list">
+            <div class="highlight-item">
+              <div class="highlight-icon">🏮</div>
+              <div class="highlight-text">
+                <strong>Lantern Crafts</strong
+                ><span>Seasonal and decorative lantern pieces.</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🍪</div>
+              <div class="highlight-text">
+                <strong>Food Pasalubong</strong
+                ><span>Tocino, longganisa, cookies, and local sweets.</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🧵</div>
+              <div class="highlight-text">
+                <strong>Local Handmade Goods</strong
+                ><span>Textiles and artisan-made décor products.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="tips-box">
+            <h4>Shopping Tips</h4>
+            <ul>
+              <li>Bring reusable bags for market purchases.</li>
+              <li>Check food item storage and travel shelf life.</li>
+              <li>Compare prices across market stalls.</li>
+              <li>Visit early for fresh goods and shorter lines.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

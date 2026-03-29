@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accommodation — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html" class="active">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><a href="getting-there.html">Plan Trip</a
+          ><span class="breadcrumb-sep">›</span><span>Accommodation</span>
+        </div>
+        <h1>Where to Stay</h1>
+        <p>Choose the right lodging type for your Pampanga itinerary.</p>
+      </div>
+    </header>
+    <section class="section">
+      <div class="section-inner">
+        <div class="card-grid card-grid-4">
+          <article class="card">
+            <div class="card-body">
+              <h3>Business Hotels</h3>
+              <p>Best for Clark and city-center stays with airport access.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Boutique Inns</h3>
+              <p>
+                Smaller, design-focused options near heritage and food
+                districts.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Family Suites</h3>
+              <p>Ideal for group trips needing larger rooms and parking.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Budget Lodging</h3>
+              <p>
+                Practical choices for short trips and backpacker itineraries.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="section-inner two-col">
+        <div>
+          <h2 class="section-title">Booking Tips</h2>
+          <div class="section-divider"></div>
+          <div class="highlight-list">
+            <div class="highlight-item">
+              <div class="highlight-icon">📅</div>
+              <div class="highlight-text">
+                <strong>Reserve Early</strong
+                ><span>Book ahead for December festival season.</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">📍</div>
+              <div class="highlight-text">
+                <strong>Pick by Location</strong
+                ><span
+                  >Clark for transport, Angeles for food, San Fernando for
+                  events.</span
+                >
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🚘</div>
+              <div class="highlight-text">
+                <strong>Check Transport</strong
+                ><span
+                  >Confirm airport transfers and parking availability.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="tips-box">
+            <h4>Stay Planning</h4>
+            <ul>
+              <li>Use weekday check-ins for better rates.</li>
+              <li>Verify cancellation policies before payment.</li>
+              <li>Check distance to your priority attractions.</li>
+              <li>Keep a copy of booking confirmations offline.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

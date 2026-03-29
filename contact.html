@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><span>Contact</span>
+        </div>
+        <h1>Contact Tourism Information</h1>
+        <p>
+          Reach local tourism support for planning assistance and destination
+          updates.
+        </p>
+      </div>
+    </header>
+    <section class="section">
+      <div class="section-inner two-col">
+        <div>
+          <h2 class="section-title">Tourism Desk</h2>
+          <div class="section-divider"></div>
+          <p style="color: var(--gray); margin-bottom: 1rem">
+            For official inquiries, destination clarifications, and event
+            coordination.
+          </p>
+          <div class="highlight-list">
+            <div class="highlight-item">
+              <div class="highlight-icon">📍</div>
+              <div class="highlight-text">
+                <strong>Office</strong
+                ><span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur quae omnis minus ratione velit repellendus nulla
+                  repellat ipsam, doloremque magnam sed ipsum dolorum iure
+                  soluta? Unde harum ipsam libero dolorem!</span
+                >
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">☎️</div>
+              <div class="highlight-text">
+                <strong>Phone</strong><span>0922 ayawg too</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✉️</div>
+              <div class="highlight-text">
+                <strong>Email</strong><span>Lorem ipsum dolor@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="tips-box">
+            <h4>Inquiry Checklist</h4>
+            <ul>
+              <li>Preferred travel dates</li>
+              <li>Group size and age range</li>
+              <li>Main interests: food, heritage, nature, festivals</li>
+              <li>Transport and accommodation preferences</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="section-inner">
+        <h2 class="section-title">Quick Links</h2>
+        <div class="section-divider"></div>
+        <div class="hero-actions">
+          <a href="getting-there.html" class="btn btn-red">Transport Guide</a
+          ><a href="accommodation.html" class="btn btn-gold">Where to Stay</a
+          ><a href="itinerary.html" class="btn btn-red">Sample Itinerary</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

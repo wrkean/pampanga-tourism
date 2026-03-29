@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arts & Crafts — Visit Pampanga</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="images/logo.png"
+          alt="Pampanga Province Tourism logo"
+          class="nav-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="nav-brand-text">
+          <strong>Pampanga</strong><span>Province Tourism</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="festivals.html">Festivals</a>
+        </li>
+        <li>
+          <a href="kapampangan-cuisine.html">Cuisine</a>
+        </li>
+        <li>
+          <a href="heritage.html" class="active">Heritage</a>
+        </li>
+        <li>
+          <a href="adventure.html">Adventure</a>
+        </li>
+        <li>
+          <a href="getting-there.html">Plan Trip</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header">
+      <img
+        src="images/arts-header.webp"
+        alt="Arts and Crafts"
+        class="page-header-bg"
+      />
+      <div class="page-header-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
+          ><a href="heritage.html">Heritage</a
+          ><span class="breadcrumb-sep">›</span><span>Arts & Crafts</span>
+        </div>
+        <h1>Arts & Crafts</h1>
+        <p>Kapampangan artisanship — a living tradition of creativity</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner">
+        <h2 class="section-title">The Artisan Province</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">
+          Kapampangans have long been celebrated for their extraordinary
+          craftsmanship. From the iconic Christmas parol to intricate
+          woodcarvings and fine silverwork, the province's artisans carry
+          forward centuries of creative tradition.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/arts-card-1.jpg"
+                alt="Parol making"
+                class="ratio-16-9"
+              />
+              <span class="card-badge">Iconic</span>
+            </div>
+            <div class="card-body">
+              <h3>Parol (Christmas Lantern) Making</h3>
+              <p>
+                San Fernando is the parol-making capital of the Philippines.
+                Artisans craft these elaborate bamboo-and-capiz lanterns by
+                hand, a tradition passed down through generations.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/arts-card-2.jpg"
+                alt="Woodcarving"
+                class="ratio-16-9"
+              />
+              <span class="card-badge">Traditional</span>
+            </div>
+            <div class="card-body">
+              <h3>Woodcarving</h3>
+              <p>
+                Pampanga's woodcarvers produce religious figures, furniture, and
+                decorative pieces with extraordinary skill — many destined for
+                churches and collectors worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/arts-card-3.jpg"
+                alt="Stone crafts"
+                class="ratio-16-9"
+              />
+              <span class="card-badge">Heritage</span>
+            </div>
+            <div class="card-body">
+              <h3>Stone & Marble Crafts</h3>
+              <p>
+                Santa Rita is known for its marble and stone carvers, producing
+                garden ornaments, religious statues, and architectural elements.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/arts-card-4.webp"
+                alt="Embroidery"
+                class="ratio-16-9"
+              />
+              <span class="card-badge">Traditional</span>
+            </div>
+            <div class="card-body">
+              <h3>Embroidery & Textile</h3>
+              <p>
+                Fine embroidery work on traditional Kapampangan garments, table
+                linens, and barong tagalog continues to be practiced in several
+                towns of Pampanga.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/arts-card-5.webp"
+                alt="Capiz shell crafts"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Capiz Shell Lamps</h3>
+              <p>
+                Intricate chandeliers and lamps made from capiz shells are a
+                hallmark of Pampanga's decorative crafts, beloved throughout the
+                country.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="images/arts-card-6.jpg"
+                alt="Visual arts"
+                class="ratio-16-9"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Visual Arts & Painting</h3>
+              <p>
+                Pampanga has produced many of the Philippines' finest painters
+                and sculptors, with a thriving contemporary art scene in Angeles
+                and San Fernando.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
