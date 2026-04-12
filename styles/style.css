@@ -10,6 +10,25 @@
   --gray: #555555;
   --light: #e8e2d5;
   --nav-h: 68px;
+
+  /* For bootstrap */
+  --bs-primary: var(--blue);
+  --bs-secondary: var(--gray);
+  --bs-danger: var(--red);
+  --bs-warning: var(--gold);
+  --bs-light: var(--light);
+  --bs-dark: var(--dark);
+  --bs-body-bg: var(--white);
+  --bs-body-color: var(--dark);
+  --bs-border-radius: 0.5rem;
+  --bs-border-radius-lg: 0.75rem;
+  --bs-btn-font-weight: 700;
+  --bs-link-color: var(--red);
+  --bs-link-hover-color: #8f1f24;
+  --bs-font-sans-serif: "Raleway", Arial, Helvetica, sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-headings-font-family:
+    "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 *,
@@ -25,7 +44,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--bs-body-font-family);
   background: var(--white);
   color: var(--dark);
   font-size: 16px;
@@ -36,7 +55,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--bs-headings-font-family);
   line-height: 1.2;
 }
 
@@ -56,12 +75,14 @@ ul {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--light);
+  background: rgba(232, 226, 213, 0.92);
+  backdrop-filter: saturate(160%) blur(8px);
   height: var(--nav-h);
   display: flex;
   align-items: center;
   padding: 0 2rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(26, 46, 110, 0.12);
 }
 
 .nav-brand {
@@ -205,15 +226,27 @@ ul {
 
 .btn {
   display: inline-block;
-  padding: 0.65rem 1.25rem;
-  border-radius: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.65rem 1.35rem;
+  border-radius: 999px;
+  font-family: var(--bs-body-font-family);
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 0;
   text-transform: none;
   cursor: pointer;
   border: 1px solid transparent;
+  box-shadow: 0 0.35rem 0.7rem rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0.55rem 1rem rgba(0, 0, 0, 0.18);
 }
 
 .btn-gold {
@@ -355,10 +388,20 @@ ul {
 
 .card {
   background: var(--white);
-  border-radius: 0;
+  border-radius: var(--bs-border-radius);
   overflow: hidden;
-  box-shadow: none;
-  border: 1px solid #ccc;
+  box-shadow: 0 0.35rem 0.9rem rgba(17, 17, 17, 0.08);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(17, 17, 17, 0.14);
+  border-color: rgba(26, 46, 110, 0.16);
 }
 
 .card-img {
