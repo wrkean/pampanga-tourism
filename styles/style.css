@@ -839,3 +839,21 @@ footer {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
+
+.meta-line {
+  margin-bottom: 0.45rem;
+  font-size: 0.88rem;
+}
+
+#provinceGallery img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#provinceGallery img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.55rem 1rem rgba(17, 17, 17, 0.16);
+}

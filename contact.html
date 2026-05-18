@@ -10,124 +10,82 @@
   <body class="bg-body">
     <nav class="navbar navbar-expand-lg">
       <a href="index.html" class="nav-brand navbar-brand d-flex align-items-center">
-        <img
-          src="images/logo.png"
-          alt="Pampanga Province Tourism logo"
-          class="nav-logo-img"
-          onerror="this.style.display = 'none'"
-        />
-        <div class="nav-brand-text">
-          <strong>Pampanga</strong><span>Province Tourism</span>
-        </div>
+        <img src="images/logo.png" alt="Pampanga Province Tourism logo" class="nav-logo-img" onerror="this.style.display = 'none'" />
+        <div class="nav-brand-text"><strong>Pampanga</strong><span>Province Tourism</span></div>
       </a>
       <button class="nav-toggle navbar-toggler border-0 shadow-none p-2" type="button" onclick="toggleNav()" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links navbar-nav ms-auto align-items-lg-center" id="navLinks">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="destinations.html" class="nav-link">Destinations</a>
-        </li>
-        <li class="nav-item">
-          <a href="festivals.html" class="nav-link">Festivals</a>
-        </li>
-        <li class="nav-item">
-          <a href="kapampangan-cuisine.html" class="nav-link">Cuisine</a>
-        </li>
-        <li class="nav-item">
-          <a href="heritage.html" class="nav-link">Heritage</a>
-        </li>
-        <li class="nav-item">
-          <a href="adventure.html" class="nav-link">Adventure</a>
-        </li>
-        <li class="nav-item">
-          <a href="getting-there.html" class="nav-link">Plan Trip</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">About</a>
-        </li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li class="nav-item"><a href="festivals.html" class="nav-link">Festivals</a></li>
+        <li class="nav-item"><a href="kapampangan-cuisine.html" class="nav-link">Cuisine</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="getting-there.html" class="nav-link">Plan Trip</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
       </ul>
     </nav>
+
     <header class="page-header py-5">
       <div class="page-header-content container">
-        <div class="breadcrumb">
-          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span
-          ><span>Contact</span>
-        </div>
-        <h1>Contact Tourism Information</h1>
-        <p>
-          Reach local tourism support for planning assistance and destination
-          updates.
-        </p>
+        <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Inquiry Form</span></div>
+        <h1>Tourist Inquiry Form</h1>
+        <p>Send your travel inquiry and get destination assistance.</p>
       </div>
     </header>
+
     <section class="section py-5">
-      <div class="section-inner container two-col row g-4 align-items-center">
-        <div>
-          <h2 class="section-title">Tourism Desk</h2>
-          <div class="section-divider"></div>
-          <p style="color: var(--gray); margin-bottom: 1rem">
-            For official inquiries, destination clarifications, and event
-            coordination.
-          </p>
-          <div class="highlight-list">
-            <div class="highlight-item">
-              <div class="highlight-icon">📍</div>
-              <div class="highlight-text">
-                <strong>Office</strong
-                ><span
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consequuntur quae omnis minus ratione velit repellendus nulla
-                  repellat ipsam, doloremque magnam sed ipsum dolorum iure
-                  soluta? Unde harum ipsam libero dolorem!</span
-                >
-              </div>
-            </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">☎️</div>
-              <div class="highlight-text">
-                <strong>Phone</strong><span>0922 ayawg too</span>
-              </div>
-            </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">✉️</div>
-              <div class="highlight-text">
-                <strong>Email</strong><span>Lorem ipsum dolor@gmail.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="tips-box">
-            <h4>Inquiry Checklist</h4>
-            <ul>
-              <li>Preferred travel dates</li>
-              <li>Group size and age range</li>
-              <li>Main interests: food, heritage, nature, festivals</li>
-              <li>Transport and accommodation preferences</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-light py-5">
       <div class="section-inner container">
-        <h2 class="section-title">Quick Links</h2>
-        <div class="section-divider"></div>
-        <div class="hero-actions d-flex flex-wrap justify-content-center gap-3">
-          <a href="getting-there.html" class="btn btn-red">Transport Guide</a
-          ><a href="accommodation.html" class="btn btn-gold">Where to Stay</a
-          ><a href="itinerary.html" class="btn btn-red">Sample Itinerary</a>
-        </div>
+        <form id="inquiryForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full name</label>
+              <input id="fullName" type="text" class="form-control" />
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email address</label>
+              <input id="email" type="email" class="form-control" />
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="contactNumber" class="form-label">Contact number</label>
+              <input id="contactNumber" type="text" class="form-control" />
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="selectedDestination" class="form-label">Selected destination</label>
+              <select id="selectedDestination" class="form-select">
+                <option value="">Choose destination</option>
+              </select>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="travelDate" class="form-label">Travel date</label>
+              <input id="travelDate" type="date" class="form-control" />
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="visitors" class="form-label">Number of visitors</label>
+              <input id="visitors" type="number" min="1" class="form-control" />
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="4" class="form-control"></textarea>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-red" type="submit">Submit Inquiry</button>
+            </div>
+          </div>
+        </form>
+        <div id="formSuccess" class="alert alert-success mt-3 d-none">Inquiry submitted successfully. We will contact you soon.</div>
       </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function toggleNav() {
-        document.getElementById("navLinks").classList.toggle("open");
-      }
-    </script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
