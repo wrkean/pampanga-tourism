@@ -125,6 +125,11 @@ ul {
   margin-left: auto;
 }
 
+/* Keep custom breakpoint behavior instead of Bootstrap's 992px navbar collapse */
+.navbar .navbar-nav {
+  flex-direction: row;
+}
+
 .nav-links a {
   color: var(--dark);
   font-size: 0.9rem;
@@ -785,6 +790,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .navbar .navbar-nav {
+    flex-direction: column;
+  }
+
   .nav-links {
     display: none;
     position: absolute;
