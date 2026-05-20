@@ -5,14 +5,15 @@ const destinationsData = [
     municipality: "City of San Fernando",
     category: "Historical Site",
     image: "images/destinations-card-1.jpeg",
-    shortDescription: "Provincial capital known for heritage landmarks and lantern-making tradition.",
+    shortDescription:
+      "Provincial capital known for heritage landmarks and lantern-making tradition.",
     fullDescription:
       "San Fernando blends colonial-era architecture, local museums, and active cultural streets where visitors can experience Pampanga's identity.",
     entranceFee: "Free walking areas; some museums may charge PHP 50-100",
     openingHours: "Most sites: 8:00 AM - 5:00 PM",
     activities: "Heritage walk, museum visits, food crawl, lantern workshop",
     bestTimeToVisit: "December for lantern season; early mornings year-round",
-    travelTips: "Wear light clothing and visit on weekdays to avoid traffic."
+    travelTips: "Wear light clothing and visit on weekdays to avoid traffic.",
   },
   {
     id: "mount-arayat",
@@ -20,14 +21,16 @@ const destinationsData = [
     municipality: "Arayat, Pampanga",
     category: "Mountain",
     image: "images/destinations-card-2.jpg",
-    shortDescription: "Dormant volcano destination with forest trails and panoramic views.",
+    shortDescription:
+      "Dormant volcano destination with forest trails and panoramic views.",
     fullDescription:
       "Mount Arayat offers beginner-to-intermediate trekking routes and forested picnic areas with sweeping views of Central Luzon.",
     entranceFee: "PHP 30-100 depending on jump-off point",
     openingHours: "5:00 AM - 4:00 PM",
     activities: "Trekking, nature photography, picnics, birdwatching",
     bestTimeToVisit: "November to February",
-    travelTips: "Start hikes before 7:00 AM and hire a local guide for summit routes."
+    travelTips:
+      "Start hikes before 7:00 AM and hire a local guide for summit routes.",
   },
   {
     id: "candaba",
@@ -35,14 +38,16 @@ const destinationsData = [
     municipality: "Candaba, Pampanga",
     category: "Adventure",
     image: "images/destinations-card-5.webp",
-    shortDescription: "Seasonal wetland sanctuary famous for migratory birds and scenic views.",
+    shortDescription:
+      "Seasonal wetland sanctuary famous for migratory birds and scenic views.",
     fullDescription:
       "Candaba Wetlands is a top eco-tourism destination where visitors can observe migratory species and experience rural nature landscapes.",
     entranceFee: "Usually free; guided tours may cost PHP 150-300",
     openingHours: "6:00 AM - 5:00 PM",
     activities: "Birdwatching, cycling, sunrise photography",
     bestTimeToVisit: "October to February",
-    travelTips: "Bring binoculars and coordinate with local guides for birding hotspots."
+    travelTips:
+      "Bring binoculars and coordinate with local guides for birding hotspots.",
   },
   {
     id: "holy-rosary",
@@ -50,14 +55,16 @@ const destinationsData = [
     municipality: "Angeles City",
     category: "Historical Site",
     image: "images/churches-card-1.jpg",
-    shortDescription: "Historic church known for elegant architecture and religious heritage.",
+    shortDescription:
+      "Historic church known for elegant architecture and religious heritage.",
     fullDescription:
       "Built during the Spanish period, Holy Rosary Parish is one of Angeles City's key heritage churches and a central point for cultural tours.",
     entranceFee: "Free",
     openingHours: "5:00 AM - 7:00 PM",
     activities: "Church visit, heritage photography, quiet reflection",
     bestTimeToVisit: "Early morning or late afternoon",
-    travelTips: "Dress respectfully and avoid peak worship hours for quiet touring."
+    travelTips:
+      "Dress respectfully and avoid peak worship hours for quiet touring.",
   },
   {
     id: "aqua-planet",
@@ -65,14 +72,16 @@ const destinationsData = [
     municipality: "Clark Freeport, Mabalacat",
     category: "Adventure",
     image: "images/clark-card-1.jpg",
-    shortDescription: "Large waterpark destination with slides, pools, and family attractions.",
+    shortDescription:
+      "Large waterpark destination with slides, pools, and family attractions.",
     fullDescription:
       "Aqua Planet in Clark is one of the Philippines' biggest waterparks, ideal for family and group trips with all-day activity zones.",
     entranceFee: "Starts around PHP 1,000 (seasonal rates apply)",
     openingHours: "10:00 AM - 5:00 PM (check seasonal schedules)",
     activities: "Water slides, wave pool, family rides",
     bestTimeToVisit: "Dry season months",
-    travelTips: "Book tickets online and arrive before opening to avoid queues."
+    travelTips:
+      "Book tickets online and arrive before opening to avoid queues.",
   },
   {
     id: "puning-falls",
@@ -80,14 +89,15 @@ const destinationsData = [
     municipality: "Porac, Pampanga",
     category: "Waterfall",
     image: "images/adventure-card-3.jpeg",
-    shortDescription: "Off-road canyon route leading to springs, spa, and natural falls areas.",
+    shortDescription:
+      "Off-road canyon route leading to springs, spa, and natural falls areas.",
     fullDescription:
       "This adventure combines 4x4 rides, lahar landscapes, and relaxing hot spring pools, making it a unique eco-wellness destination.",
     entranceFee: "Tour packages usually start around PHP 2,000",
     openingHours: "By booking schedule",
     activities: "4x4 ride, canyon exploration, hot spring relaxation",
     bestTimeToVisit: "November to May",
-    travelTips: "Reserve in advance and wear sandals suitable for wet terrain."
+    travelTips: "Reserve in advance and wear sandals suitable for wet terrain.",
   },
   {
     id: "nepomall-food",
@@ -95,15 +105,17 @@ const destinationsData = [
     municipality: "Angeles City",
     category: "Food Destination",
     image: "images/cuisine-card-1.webp",
-    shortDescription: "Classic food district where visitors can try iconic Kapampangan dishes.",
+    shortDescription:
+      "Classic food district where visitors can try iconic Kapampangan dishes.",
     fullDescription:
       "Nepo Center and nearby food streets are ideal for tasting authentic sisig, local barbecue, and other Kapampangan favorites.",
     entranceFee: "Free entry; pay per order",
     openingHours: "11:00 AM - 10:00 PM",
     activities: "Food tasting, local dining, night food walk",
     bestTimeToVisit: "Late afternoon to evening",
-    travelTips: "Try shared platters if visiting in groups to sample more dishes."
-  }
+    travelTips:
+      "Try shared platters if visiting in groups to sample more dishes.",
+  },
 ];
 
 function toggleNav() {
@@ -124,7 +136,8 @@ function initDestinationsPage() {
     grid.innerHTML = "";
 
     if (items.length === 0) {
-      grid.innerHTML = '<p class="text-muted">No destinations match your current search/filter.</p>';
+      grid.innerHTML =
+        '<p class="text-muted">No destinations match your current search/filter.</p>';
       return;
     }
 
@@ -160,7 +173,8 @@ function initDestinationsPage() {
     document.getElementById("modalTitle").textContent = item.name;
     document.getElementById("modalImage").src = item.image;
     document.getElementById("modalImage").alt = item.name;
-    document.getElementById("modalDescription").textContent = item.fullDescription;
+    document.getElementById("modalDescription").textContent =
+      item.fullDescription;
     document.getElementById("modalLocation").textContent = item.municipality;
     document.getElementById("modalCategory").textContent = item.category;
     document.getElementById("modalActivities").textContent = item.activities;
@@ -228,7 +242,15 @@ function initInquiryForm() {
     const visitors = document.getElementById("visitors");
     const message = document.getElementById("message");
 
-    const inputs = [fullName, email, contactNumber, destinationSelect, travelDate, visitors, message];
+    const inputs = [
+      fullName,
+      email,
+      contactNumber,
+      destinationSelect,
+      travelDate,
+      visitors,
+      message,
+    ];
     inputs.forEach(clearError);
 
     let isValid = true;
